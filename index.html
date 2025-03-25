@@ -11,6 +11,8 @@
         <link rel="canonical" href="https://lnynhi02.github.io/stream-processing-pipeline-docs/">
       
       
+        <link rel="prev" href="deployment/">
+      
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -23,6 +25,9 @@
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -41,7 +46,7 @@
       
     
     
-      <link rel="stylesheet" href="extra.css">
+      <link rel="stylesheet" href="stylesheets/extra.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -53,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -62,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -98,12 +110,38 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Document
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -188,6 +226,27 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deployment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -197,12 +256,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Home
+    Document
     
   </span>
   
@@ -214,7 +275,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    Document
     
   </span>
   
@@ -226,6 +287,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -335,6 +398,27 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/lnynhi02/Stream-Processing-Pipeline" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub Repository
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -351,6 +435,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -468,48 +554,43 @@
 
 
 
-  <h1>Home</h1>
-
-<h2 id="overview">Overview</h2>
+<h1 id="documentation"><strong><em>DOCUMENTATION</em></strong></h1>
+<h2 id="overview"><strong>Overview</strong></h2>
 <p>This project is an end-to-end ETL (Extract, Transform, Load) streaming data pipeline designed to handle real-time data processing. The pipeline ingests data from a CSV source, processes it through a distributed streaming framework, and stores it in a structured database for analysis and visualization.</p>
-<p>
-    For a step-by-step deployment guide, visit the 
-    <a href="https://github.com/lnynhi02/Stream-Processing-Pipeline" target="_blank">Github repository</a>. Happy coding!
-</p>
-
-<h2 id="system-architecture">System Architecture</h2>
+<p>For a step-by-step deployment guide, visit the <a href="deployment/">Deployment</a>. Happy coding!</p>
+<h2 id="system-architecture"><strong>System Architecture</strong></h2>
 <p align="center">
-    <img src="img/pipeline-1.gif" alt="Pipeline" width="50%">
+    <img src="img/pipeline-1.gif" alt="Pipeline" width="80%">
 </p>
 
 <p>The pipeline begins by ingesting data from a CSV file into a Kafka topic, enabling real-time event streaming. Spark Streaming then consumes the data, performing necessary transformations and analyses before storing it in PostgreSQL. The processed data is subsequently used to build interactive dashboards in Power BI, allowing for both real-time monitoring and historical data analysis.</p>
-<h4 id="core-components">Core Components</h4>
+<h3 id="core-components">Core Components</h3>
 <ul>
 <li><strong>Kafka:</strong> Serves as a message broker, efficiently streaming data from CSV files into Kafka topics.</li>
 <li><strong>Spark Streaming:</strong> Handles real-time data processing and transformation before storing results in PostgreSQL.</li>
 <li><strong>PostgreSQL:</strong> Acts as the structured data storage for processed information, supporting analytical queries.</li>
 <li><strong>Power BI:</strong> Provides interactive dashboards for real-time and historical data visualization.</li>
 </ul>
-<h2 id="technical-decisions">Technical Decisions</h2>
+<h2 id="technical-decisions"><strong>Technical Decisions</strong></h2>
 <ul>
 <li><strong>Kafka:</strong> Selected for its capability to handle <em>high-throughput</em> real-time data streaming. Kafka's partitioning mechanism enables <em>parallelism</em>, ensuring scalability and fault tolerance.</li>
 <li><strong>Spark Streaming:</strong> Chosen for its <em>near real-time</em> data processing capabilities with <em>Spark Structured Streaming</em>. By leveraging distributed computing, Spark efficiently processes large-scale streaming data with multiple executors and cores.</li>
 <li><strong>PostgreSQL:</strong> Preferred over MySQL due to its <em>superior analytical capabilities</em>. While MySQL is optimized for high-speed writes, PostgreSQL is better suited for complex queries and analytical workloads.</li>
 <li><strong>Power BI:</strong> Integrated seamlessly with PostgreSQL, making it an ideal choice for intuitive data visualization without requiring extensive additional configurations.</li>
 </ul>
-<h2 id="technical-notes">Technical Notes</h2>
-<h4 id="optimizing-resource-allocation">Optimizing Resource Allocation</h4>
+<h2 id="technical-notes"><strong>Technical Notes</strong></h2>
+<h3 id="optimizing-resource-allocation">Optimizing Resource Allocation</h3>
 <ul>
 <li><strong>Using a Single Executor:</strong> Due to limited CPU and memory resources, a <em>fat executor</em> approach is used—allocating all available resources to a single executor. With 10 cores, each core receives 500MB of memory, optimizing data processing efficiency.</li>
 <li><strong>Kafka Partitioning Strategy:</strong> Kafka topics are configured with <em>10 partitions</em> to align with Spark's 10 available cores, ensuring parallel processing and maximizing throughput.</li>
 </ul>
-<h4 id="performance-optimizations">Performance Optimizations</h4>
+<h3 id="performance-optimizations">Performance Optimizations</h3>
 <ul>
 <li><strong>Optimizing Joins with Broadcast Join:</strong> When joining a large dataset with a smaller one, using <em>broadcast joins</em> eliminates shuffle operations, reducing network overhead and improving query performance.</li>
 <li><strong>Reducing Spark Shuffle Partitions:</strong> The default setting of 200 shuffle partitions in Spark can be excessive for this setup. Reducing it to <em>9 partitions</em> has significantly improved execution time, reducing task completion from minutes to seconds or even milliseconds.</li>
 <li><strong>Optimizing Aggregations with Early Filtering:</strong> Applying filters before performing aggregations reduces the amount of shuffled data, leading to lower computation time and increased efficiency.</li>
 </ul>
-<h4 id="checkpointing-in-spark">Checkpointing in Spark</h4>
+<h3 id="checkpointing-in-spark">Checkpointing in Spark</h3>
 <ul>
 <li>
 <p><strong>Checkpointing</strong> is used to store the state of the processing pipeline, ensuring <em>fault tolerance</em> and recovery in case of failures (e.g., node failures).</p>
@@ -521,7 +602,7 @@
 <p>Checkpointing ensures the system's resilience and helps recover the stream processing from the point of failure, improving data consistency.</p>
 </li>
 </ul>
-<h2 id="expanding-the-pipeline">Expanding the Pipeline</h2>
+<h2 id="expanding-the-pipeline"><strong>Expanding the Pipeline</strong></h2>
 <ul>
 <li><strong>Scaling Kafka Producers:</strong> With 10 partitions in Kafka, data ingestion speed may be affected by network delays or insufficient producers. Increasing the number of producers helps ensure efficient data flow.</li>
 <li><strong>Enhancing Throughput:</strong> Higher throughput can be achieved by increasing the number of Kafka partitions, adding more producers, and allocating additional Spark executors.</li>
@@ -547,6 +628,12 @@
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -574,7 +661,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "navigation.top"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
