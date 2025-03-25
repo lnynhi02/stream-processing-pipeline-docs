@@ -587,7 +587,7 @@
 <h3 id="performance-optimizations">Performance Optimizations</h3>
 <ul>
 <li><strong>Optimizing Joins with Broadcast Join:</strong> When joining a large dataset with a smaller one, using <em>broadcast joins</em> eliminates shuffle operations, reducing network overhead and improving query performance.</li>
-<li><strong>Reducing Spark Shuffle Partitions:</strong> The default setting of 200 shuffle partitions in Spark can be excessive for this setup. Reducing it to <em>9 partitions</em> has significantly improved execution time, reducing task completion from minutes to seconds or even milliseconds.</li>
+<li><strong>Reducing Spark Shuffle Partitions:</strong> The default setting of 200 shuffle partitions in Spark can be excessive for this setup. Reducing it to <em>9 partitions</em> has significantly improved execution time, reducing task completion from <strong><em>minutes to seconds or even milliseconds</em></strong>.</li>
 <li><strong>Optimizing Aggregations with Early Filtering:</strong> Applying filters before performing aggregations reduces the amount of shuffled data, leading to lower computation time and increased efficiency.</li>
 </ul>
 <h3 id="checkpointing-in-spark">Checkpointing in Spark</h3>

@@ -792,9 +792,9 @@
 <h3 id="spark-setup">Spark Setup</h3>
 <p>The goal of the Spark jobs is to consume the streaming data from the Kafka topic <strong>yellow_tripdata</strong> and then transfer it to the Postgres tables.</p>
 <p>The complete code for the Spark jobs is in the <code>src/spark_streaming.py</code> file.</p>
-<ol>
+<ul>
 <li>Create the Spark Session:</li>
-</ol>
+</ul>
 <pre><code class="language-python">def create_sparksession() -&gt; SparkSession:
     spark = SparkSession.builder \
             .appName(&quot;KafkaToPostgres&quot;) \
@@ -804,9 +804,9 @@
             .getOrCreate()
     return spark
 </code></pre>
-<ol>
+<ul>
 <li>Read Kafka stream and apply schema:</li>
-</ol>
+</ul>
 <pre><code class="language-python">def create_schema(streaming_df):
     schema = StructType([
         StructField('VendorID', StringType(), True),
@@ -834,21 +834,21 @@
         .select('data.*')
     return df
 </code></pre>
-<ol>
+<ul>
 <li>Run Spark jobs:</li>
-</ol>
+</ul>
 <pre><code class="language-bash">$SPARK_HOME/bin/spark-class.cmd org.apache.spark.deploy.master.Master
 $SPARK_HOME/sbin/start-master.sh
 </code></pre>
-<ol>
+<ul>
 <li>Start a Spark worker:</li>
-</ol>
+</ul>
 <pre><code class="language-bash">$SPARK_HOME/bin/spark-class.cmd org.apache.spark.deploy.worker.Worker spark://HOST:PORT
 $SPARK_HOME/sbin/start-slave.sh spark://HOST:PORT
 </code></pre>
-<ol>
+<ul>
 <li>Submit Spark jobs:</li>
-</ol>
+</ul>
 <pre><code class="language-bash">$YOUR_PROJECT_DIRECTORY/spark-submit \
 --master spark://HOST:PORT \
 --num-executors 1 \
