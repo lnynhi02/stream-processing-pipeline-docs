@@ -785,10 +785,12 @@
 <pre><code>docker-compose up -d
 </code></pre>
 <p>After the services start, visit the Kafka UI at http://localhost:8800/.</p>
-<p>Create a topic named <strong>yellow_tripdata</strong> with:
-- <strong>Replication factor</strong> set to <strong>1</strong>
-- <strong>Partitions</strong> set to <strong>10</strong>
-- <strong>Data retention</strong> set to a small number.</p>
+<p>Create a topic named <em>yellow_tripdata</em> with:</p>
+<ul>
+<li><em>Replication factor</em> set to 1</li>
+<li><em>Partitions</em> set to 10</li>
+<li><em>Data retention</em> set to a small number.</li>
+</ul>
 <h3 id="spark-setup">Spark Setup</h3>
 <p>The goal of the Spark jobs is to consume the streaming data from the Kafka topic <strong>yellow_tripdata</strong> and then transfer it to the Postgres tables.</p>
 <p>The complete code for the Spark jobs is in the <code>src/spark_streaming.py</code> file.</p>
