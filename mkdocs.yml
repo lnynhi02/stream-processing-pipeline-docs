@@ -1,8 +1,0 @@
-site_name: Stream Processing Pipeline Docs
-site_url: https://lnynhi02.github.io/stream-processing-pipeline-docs
-
-extra_css:
-  - extra.css
-
-theme:
-  name: material
