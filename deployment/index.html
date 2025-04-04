@@ -148,43 +148,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
   </nav>
   
@@ -590,12 +553,12 @@
 
 
 
-<h1 id="new-york-city-yellow-trip-stream-processing"><strong><em>New York City Yellow Trip Stream Processing</em></strong></h1>
+<div><h1 id="new-york-city-yellow-trip-stream-processing"><strong><em>New York City Yellow Trip Stream Processing</em></strong></h1>
 <p>This reference architecture shows an <strong><em>end-to-end real-time analytics pipeline</em></strong> utilizing ETL (Extract, Transform, Load) processes. The pipeline will ingest data from a source, perform necessary transformations and computations, and load it into storage for future purposes.</p>
 <p><strong><em>Scenario</em></strong>: A taxi company that has collected yellow taxi trip data in New York City. The dataset includes several fields such as total_amount, dropoff_location, pickup_location, and trip_distance. There is also a lookup file containing boroughs and zones based on location_id. To analyze trip trends in real-time, the company aims to calculate the number of trips, average revenue per hour,... and detect abnormal trips as early as possible.</p>
 <h2 id="overview"><strong>Overview</strong></h2>
 <p>The following is the structure of the data pipeline:</p>
-<p><img alt="Image" src="../img/pipeline-1.gif" /></p>
+<p><img alt="Image" src="../img/pipeline-1.gif"></p>
 <h2 id="achievements"><strong>Achievements</strong></h2>
 <ul>
 <li>Detects abnormal trip durations (e.g., less than 1 minute, more than 2 hours) and identifies discrepancies between the actual and calculated amounts.</li>
@@ -605,7 +568,7 @@
 <li>Efficiently writes large-scale processed streaming data to PostgreSQL in near real-time.</li>
 </ul>
 <p>You can download the video in the <code>img/</code> folder to see the dashboard. Or you can visit this <a href="https://drive.google.com/file/d/1Tm6IZR8wEuHAIsniyg0NmjtNx_8ZFFJI/view?usp=sharing" target="_blank">link</a> to view it.</p>
-<p><img alt="type:video" src="../img/dashboard.mp4" />{: style='width: 100%'}</p>
+<p><div class="video-container"><video style="position:relative;width:100%;height:22.172vw" muted controls alt="type:video"><source src="../img/dashboard.mp4" type="video/mp4"></source></video></div></p>
 <h2 id="table-of-contents"><strong>📕 Table Of Contents</strong></h2>
 <ul>
 <li><a href="#local-setup">⚙️ Local Setup</a></li>
@@ -624,7 +587,7 @@
 <details>
 <summary>🚕 New York Yellow Taxi Dataset</summary>
 <p>The data file is too large to push it to GitHub. Therefore, please press below to download the zip file and extract it to the <code>data/</code> folder of the project directory. Otherwise, you can place it anywhere you want.</p>
-<p><li><a href="https://drive.google.com/file/d/1mT3UTHNjPHGxKTQLuipTNqGLAsXInG9R/view" target="_blank">yellow_tripdata_2024.csv</a></li></p>
+<p></p><li><a href="https://drive.google.com/file/d/1mT3UTHNjPHGxKTQLuipTNqGLAsXInG9R/view" target="_blank">yellow_tripdata_2024.csv</a></li>
 <table>
 <thead>
 <tr>
@@ -715,12 +678,12 @@
 <details>
 <summary>🔍 Taxi Zone Lookup Table</summary>
 <p>This data is used to support the development of dashboard analyses in Power BI.**
-<li><a href="https://github.com/lnynhi02/Stream-Processing-Pipeline/blob/main/data/taxi_zone_lookup.csv" target="_blank">taxi_zone_lookup</a></li></p>
+</p><li><a href="https://github.com/lnynhi02/Stream-Processing-Pipeline/blob/main/data/taxi_zone_lookup.csv" target="_blank">taxi_zone_lookup</a></li>
 </details>
 <details>
 <summary>🗺️ Taxi Zone Shapefile</summary>
 <p>This data is used to support the development of dashboard analyses in Power BI.
-<li><a href="https://github.com/lnynhi02/Stream-Processing-Pipeline/tree/main/data/taxi_zones" target="_blank">taxi_zone_shapefile</a></li></p>
+</p><li><a href="https://github.com/lnynhi02/Stream-Processing-Pipeline/tree/main/data/taxi_zones" target="_blank">taxi_zone_shapefile</a></li>
 </details>
 <h3 id="prerequisites"><strong>Prerequisites</strong></h3>
 <ul>
@@ -799,10 +762,10 @@
 </ul>
 <pre><code class="language-python">def create_sparksession() -&gt; SparkSession:
     spark = SparkSession.builder \
-            .appName(&quot;KafkaToPostgres&quot;) \
-            .config(&quot;spark.sql.shuffle.partitions&quot;, &quot;9&quot;) \
-            .config(&quot;spark.sql.warehouse.dir&quot;, &quot;tmp/sql_warehouse&quot;) \
-            .config(&quot;spark.local.dir&quot;, &quot;tmp/local_dir&quot;) \
+            .appName("KafkaToPostgres") \
+            .config("spark.sql.shuffle.partitions", "9") \
+            .config("spark.sql.warehouse.dir", "tmp/sql_warehouse") \
+            .config("spark.local.dir", "tmp/local_dir") \
             .getOrCreate()
     return spark
 </code></pre>
@@ -831,7 +794,7 @@
         StructField('congestion_surcharge', StringType(), True),
         StructField('Airport_fee', StringType(), True)
     ])
-    df = streaming_df.selectExpr(&quot;CAST(value AS String)&quot;)\
+    df = streaming_df.selectExpr("CAST(value AS String)")\
         .select(from_json(col('value'), schema).alias('data'))\
         .select('data.*')
     return df
@@ -864,7 +827,7 @@ src/spark_streaming.py
 <h2 id="summary"><strong>Summary</strong></h2>
 <p>Throughout this guide, we’ve thoroughly examined each component of the pipeline, setting up Kafka for data streaming, from processing data with Spark to storing it in PostgreSQL. The incorporation of Docker simplifies the Kafka setup.</p>
 <p>It's important to note that while this setup is ideal for learning and small-scale projects, scaling it for production use would require additional considerations, particularly regarding security and performance optimization. Future enhancements could include integrating advanced data processing techniques,expanding the pipeline to incorporate more complex data sources.</p>
-<p>Thank you very much for following along with me. If you have any questions, feel free to inbox me. I hope you enjoy working on the project. Thank you!</p>
+<p>Thank you very much for following along with me. If you have any questions, feel free to inbox me. I hope you enjoy working on the project. Thank you!</p></div>
 
 
 
