@@ -11,8 +11,8 @@
         <link rel="canonical" href="https://lnynhi02.github.io/stream-processing-pipeline-docs/">
       
       
-        <link rel="prev" href="deployment/">
       
+        <link rel="next" href="changelog/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Stream Processing Pipeline Docs</title>
+        <title>New York City Yellow Trip Stream Processing</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Stream Processing Pipeline Docs" class="md-header__button md-logo" aria-label="Stream Processing Pipeline Docs" data-md-component="logo">
+    <a href="." title="New York City Yellow Trip Stream Processing" class="md-header__button md-logo" aria-label="New York City Yellow Trip Stream Processing" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,13 +104,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Stream Processing Pipeline Docs
+            New York City Yellow Trip Stream Processing
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Document
+              Documentation
             
           </span>
         </div>
@@ -174,37 +174,16 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Stream Processing Pipeline Docs" class="md-nav__button md-logo" aria-label="Stream Processing Pipeline Docs" data-md-component="logo">
+    <a href="." title="New York City Yellow Trip Stream Processing" class="md-nav__button md-logo" aria-label="New York City Yellow Trip Stream Processing" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Stream Processing Pipeline Docs
+    New York City Yellow Trip Stream Processing
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="deployment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Deployment
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
     
       
       
@@ -226,7 +205,7 @@
           
   
   <span class="md-ellipsis">
-    Document
+    Documentation
     
   </span>
   
@@ -238,7 +217,7 @@
         
   
   <span class="md-ellipsis">
-    Document
+    Documentation
     
   </span>
   
@@ -261,28 +240,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#i-design" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      I. Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I. Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-data-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Data Source
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#system-architecture" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-business-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      System Architecture
+      2. Business Requirements
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="System Architecture">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-etl-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. ETL Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ETL Design">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-components" class="md-nav__link">
+  <a href="#etl-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Components
+      ETL Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tech-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tech Selection
     </span>
   </a>
   
@@ -292,52 +308,6 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-decisions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Decisions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Notes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Technical Notes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#optimizing-resource-allocation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Optimizing Resource Allocation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Performance Optimizations
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checkpointing-in-spark" class="md-nav__link">
-    <span class="md-ellipsis">
-      Checkpointing in Spark
-    </span>
-  </a>
-  
-</li>
         
       </ul>
     </nav>
@@ -345,9 +315,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#expanding-the-pipeline" class="md-nav__link">
+  <a href="#ii-deployment" class="md-nav__link">
     <span class="md-ellipsis">
-      Expanding the Pipeline
+      II. Deployment
     </span>
   </a>
   
@@ -357,6 +327,48 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deployment
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -409,28 +421,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#i-design" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      I. Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I. Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-data-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Data Source
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#system-architecture" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-business-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      System Architecture
+      2. Business Requirements
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="System Architecture">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-etl-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. ETL Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ETL Design">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-components" class="md-nav__link">
+  <a href="#etl-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Components
+      ETL Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tech-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tech Selection
     </span>
   </a>
   
@@ -440,52 +489,6 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-decisions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Decisions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Notes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Technical Notes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#optimizing-resource-allocation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Optimizing Resource Allocation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Performance Optimizations
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checkpointing-in-spark" class="md-nav__link">
-    <span class="md-ellipsis">
-      Checkpointing in Spark
-    </span>
-  </a>
-  
-</li>
         
       </ul>
     </nav>
@@ -493,9 +496,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#expanding-the-pipeline" class="md-nav__link">
+  <a href="#ii-deployment" class="md-nav__link">
     <span class="md-ellipsis">
-      Expanding the Pipeline
+      II. Deployment
     </span>
   </a>
   
@@ -517,61 +520,143 @@
 
 
 
-<div><h1 id="documentation"><strong><em>DOCUMENTATION</em></strong></h1>
-<h2 id="overview"><strong>Overview</strong></h2>
-<p>This project is an end-to-end ETL (Extract, Transform, Load) streaming data pipeline designed to handle real-time data processing. The pipeline ingests data from a CSV source, processes it through a distributed streaming framework, and stores it in a structured database for analysis and visualization.</p>
-<p>For a step-by-step deployment guide, visit the <a href="deployment/">Deployment</a>. Happy coding!</p>
-<h2 id="system-architecture"><strong>System Architecture</strong></h2>
-<p align="center">
-    <img src="img/pipeline-1.gif" alt="Pipeline" width="80%">
-</p>
-
-<p>The pipeline begins by ingesting data from a CSV file into a Kafka topic, enabling real-time event streaming. Spark Streaming then consumes the data, performing necessary transformations and analyses before storing it in PostgreSQL. The processed data is subsequently used to build interactive dashboards in Power BI, allowing for both real-time monitoring and historical data analysis.</p>
-<h3 id="core-components">Core Components</h3>
+<div><h1 id="documentation"><strong><em>📝 DOCUMENTATION</em></strong></h1>
+<h2 id="i-design">I. Design</h2>
+<p><strong>Note</strong>: This is a simulated real-time analysis pipeline, intended purely for experimental and practice purposes.</p>
+<h3 id="1-data-source">1. Data Source</h3>
+<p>The data is divided into several CSV files and used as follows:</p>
 <ul>
-<li><strong>Kafka:</strong> Serves as a message broker, efficiently streaming data from CSV files into Kafka topics.</li>
-<li><strong>Spark Streaming:</strong> Handles real-time data processing and transformation before storing results in PostgreSQL.</li>
-<li><strong>PostgreSQL:</strong> Acts as the structured data storage for processed information, supporting analytical queries.</li>
-<li><strong>Power BI:</strong> Provides interactive dashboards for real-time and historical data visualization.</li>
+<li><code>yellow_tripdata_2024.csv</code>: Contains taxi trips in New York City in 2024</li>
 </ul>
-<h2 id="technical-decisions"><strong>Technical Decisions</strong></h2>
-<ul>
-<li><strong>Kafka:</strong> Selected for its capability to handle <em>high-throughput</em> real-time data streaming. Kafka's partitioning mechanism enables <em>parallelism</em>, ensuring scalability and fault tolerance.</li>
-<li><strong>Spark Streaming:</strong> Chosen for its <em>near real-time</em> data processing capabilities with <em>Spark Structured Streaming</em>. By leveraging distributed computing, Spark efficiently processes large-scale streaming data with multiple executors and cores.</li>
-<li><strong>PostgreSQL:</strong> Preferred over MySQL due to its <em>superior analytical capabilities</em>. While MySQL is optimized for high-speed writes, PostgreSQL is better suited for complex queries and analytical workloads.</li>
-<li><strong>Power BI:</strong> Integrated seamlessly with PostgreSQL, making it an ideal choice for intuitive data visualization without requiring extensive additional configurations.</li>
-</ul>
-<h2 id="technical-notes"><strong>Technical Notes</strong></h2>
-<h3 id="optimizing-resource-allocation">Optimizing Resource Allocation</h3>
-<ul>
-<li><strong>Using a Single Executor:</strong> Due to limited CPU and memory resources, a <em>fat executor</em> approach is used—allocating all available resources to a single executor. With 10 cores, each core receives 500MB of memory, optimizing data processing efficiency.</li>
-<li><strong>Kafka Partitioning Strategy:</strong> Kafka topics are configured with <em>10 partitions</em> to align with Spark's 10 available cores, ensuring parallel processing and maximizing throughput.</li>
-</ul>
-<h3 id="performance-optimizations">Performance Optimizations</h3>
-<ul>
-<li><strong>Optimizing Joins with Broadcast Join:</strong> When joining a large dataset with a smaller one, using <em>broadcast joins</em> eliminates shuffle operations, reducing network overhead and improving query performance.</li>
-<li><strong>Reducing Spark Shuffle Partitions:</strong> The default setting of 200 shuffle partitions in Spark can be excessive for this setup. Reducing it to <em>9 partitions</em> has significantly improved execution time, reducing task completion from <strong><em>minutes to seconds or even milliseconds</em></strong>.</li>
-<li><strong>Optimizing Aggregations with Early Filtering:</strong> Applying filters before performing aggregations reduces the amount of shuffled data, leading to lower computation time and increased efficiency.</li>
-</ul>
-<h3 id="checkpointing-in-spark">Checkpointing in Spark</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VendorID</td>
+<td>A code indicating the TPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc.</td>
+</tr>
+<tr>
+<td>tpep_pickup_datetime</td>
+<td>The date and time when the meter was engaged.</td>
+</tr>
+<tr>
+<td>tpep_dropoff_datetime</td>
+<td>The date and time when the meter was disengaged.</td>
+</tr>
+<tr>
+<td>Passenger_count</td>
+<td>The number of passengers in the vehicle. This is a driver-entered value.</td>
+</tr>
+<tr>
+<td>Trip_distance</td>
+<td>The elapsed trip distance in miles reported by the taximeter.</td>
+</tr>
+<tr>
+<td>PULocationID</td>
+<td>TLC Taxi Zone in which the taximeter was engaged.</td>
+</tr>
+<tr>
+<td>DOLocationID</td>
+<td>TLC Taxi Zone in which the taximeter was disengaged.</td>
+</tr>
+<tr>
+<td>RateCodeID</td>
+<td>The final rate code in effect at the end of the trip.<br>1= Standard rate <br>2= JFK <br>3= Newark <br>4= Nassau or Westchester <br>5= Negotiated fare <br>6= Group ride</td>
+</tr>
+<tr>
+<td>Store_and_fwd_flag</td>
+<td>Indicates whether the trip record was held in vehicle memory before sending to the vendor due to no server connection.<br>Y = Store and forward trip <br>N = Not a store and forward trip</td>
+</tr>
+<tr>
+<td>Payment_type</td>
+<td>A numeric code signifying how the passenger paid for the trip.<br>1= Credit card <br>2= Cash <br>3= No charge <br>4= Dispute <br>5= Unknown <br>6= Voided trip</td>
+</tr>
+<tr>
+<td>Fare_amount</td>
+<td>The time-and-distance fare calculated by the meter.</td>
+</tr>
+<tr>
+<td>Extra</td>
+<td>Miscellaneous extras and surcharges, including $0.50 and $1 rush hour and overnight charges.</td>
+</tr>
+<tr>
+<td>MTA_tax</td>
+<td>$0.50 MTA tax automatically triggered based on the metered rate in use.</td>
+</tr>
+<tr>
+<td>Improvement_surcharge</td>
+<td>$0.30 improvement surcharge assessed at flag drop. This began in 2015.</td>
+</tr>
+<tr>
+<td>Tip_amount</td>
+<td>Tip amount. Automatically populated for credit card tips; cash tips are not included.</td>
+</tr>
+<tr>
+<td>Tolls_amount</td>
+<td>Total amount of all tolls paid in trip.</td>
+</tr>
+<tr>
+<td>Total_amount</td>
+<td>The total amount charged to passengers. Does not include cash tips.</td>
+</tr>
+<tr>
+<td>Congestion_Surcharge</td>
+<td>Total amount collected in trip for NYS congestion surcharge.</td>
+</tr>
+<tr>
+<td>Airport_fee</td>
+<td>$1.25 for pick up only at LaGuardia and John F. Kennedy Airports.</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li>
-<p><strong>Checkpointing</strong> is used to store the state of the processing pipeline, ensuring <em>fault tolerance</em> and recovery in case of failures (e.g., node failures).</p>
-</li>
-<li>
-<p>Spark Structured Streaming supports checkpointing to persist the state of processing between micro-batches. This enables the system to recover from failures without losing data.</p>
-</li>
-<li>
-<p>Checkpointing ensures the system's resilience and helps recover the stream processing from the point of failure, improving data consistency.</p>
+<p><code>taxi_zone_lookup.csv</code>: A list of boroughs and zones</p>
+<ul>
+<li>LocationID: A unique identifier for each location.</li>
+<li>Borough: The borough in New York City where the location belongs (e.g., Manhattan, Brooklyn, etc.)</li>
+<li>Zone: The specific zone within the borough.</li>
+</ul>
 </li>
 </ul>
-<h2 id="expanding-the-pipeline"><strong>Expanding the Pipeline</strong></h2>
+<h3 id="2-business-requirements">2. Business Requirements</h3>
+<ol>
+<li>
+<p>Real-time analysis: Analyze trip data in real-time to monitor trends and insights.</p>
 <ul>
-<li><strong>Scaling Kafka Producers:</strong> With 10 partitions in Kafka, data ingestion speed may be affected by network delays or insufficient producers. Increasing the number of producers helps ensure efficient data flow.</li>
-<li><strong>Enhancing Throughput:</strong> Higher throughput can be achieved by increasing the number of Kafka partitions, adding more producers, and allocating additional Spark executors.</li>
-<li><strong>Ensuring Reliable Message Indexing:</strong> Storing message indexes in local files is not ideal for production environments, as failures in message transmission to Kafka could lead to inconsistencies in indexing.</li>
-<li><strong>Considering OLAP for Scalability:</strong> While PostgreSQL works well for small-scale data warehousing, its OLTP nature may limit scalability. Transitioning to an OLAP data warehouse can improve storage efficiency and analytical performance.</li>
-</ul></div>
+<li>Detect trips with abnormal fees and durations.</li>
+<li>Track the number of trips and the distribution of trips by borough in real-time.</li>
+<li>Identify the most preferred payment methods and calculate the average revenue per hour.</li>
+</ul>
+</li>
+<li>
+<p>Weekly Analysis: Generate comprehensive reports to uncover patterns and support strategic decisions.</p>
+<ul>
+<li>Store complete data for batch processing and deeper analysis.</li>
+<li>Compare trends across different weekdays to identify behavior patterns.</li>
+<li>Analyze weekly performance metrics such as total revenue, trip volume, and preferred payment types.</li>
+</ul>
+</li>
+</ol>
+<h3 id="3-etl-design">3. ETL Design</h3>
+<h4 id="etl-diagram">ETL Diagram</h4>
+<p><img alt="Image" src="img/etl-diagram.png"></p>
+<h4 id="task-flow">Task Flow</h4>
+<p><img alt="Image" src="img/task-flow.png"></p>
+<h4 id="tech-selection">Tech Selection</h4>
+<p><img alt="Image" src="img/pipeline-1.gif"></p>
+<ul>
+<li><code>Kafka</code>: Kafka: A distributed event streaming platform designed to handle real-time data and support high-throughput, parallel processing.</li>
+<li><code>Spark</code>: A distributed data processing engine that works seamlessly with Kafka. With <strong>Spark Structured Streaming</strong>, it enables near real-time data processing and real-time analytics. Spark is highly scalable and capable of handling large-scale data workloads.</li>
+<li><code>PostgreSQL</code>: While not the best choice for handling large-scale or high-frequency real-time data due to its limitations in continuous writing and scalability, it's used in this experimental project for simplicity. Additionally, PostgreSQL integrates well with Power BI, which is used here for visualization.</li>
+<li><code>PowerBI</code>: Used to build dashboards and visualize insights. It easily connects to PostgreSQL, making it convenient to create daily or weekly reports with minimal setup.</li>
+</ul>
+<h2 id="ii-deployment">II. <a href="deployment/">Deployment</a></h2></div>
 
 
 

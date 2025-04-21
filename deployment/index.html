@@ -11,8 +11,8 @@
         <link rel="canonical" href="https://lnynhi02.github.io/stream-processing-pipeline-docs/deployment/">
       
       
+        <link rel="prev" href="../changelog/">
       
-        <link rel="next" href="..">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Deployment - Stream Processing Pipeline Docs</title>
+        <title>Deployment - New York City Yellow Trip Stream Processing</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Stream Processing Pipeline Docs" class="md-header__button md-logo" aria-label="Stream Processing Pipeline Docs" data-md-component="logo">
+    <a href=".." title="New York City Yellow Trip Stream Processing" class="md-header__button md-logo" aria-label="New York City Yellow Trip Stream Processing" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +104,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Stream Processing Pipeline Docs
+            New York City Yellow Trip Stream Processing
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -174,16 +174,58 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Stream Processing Pipeline Docs" class="md-nav__button md-logo" aria-label="Stream Processing Pipeline Docs" data-md-component="logo">
+    <a href=".." title="New York City Yellow Trip Stream Processing" class="md-nav__button md-logo" aria-label="New York City Yellow Trip Stream Processing" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Stream Processing Pipeline Docs
+    New York City Yellow Trip Stream Processing
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
     
       
       
@@ -279,7 +321,7 @@
           <li class="md-nav__item">
   <a href="#dataset" class="md-nav__link">
     <span class="md-ellipsis">
-      📂 Dataset
+      Dataset
     </span>
   </a>
   
@@ -308,6 +350,15 @@
   
     <nav class="md-nav" aria-label="💻 Deployment">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#execution-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution Overview 🎬
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#postgres-setup" class="md-nav__link">
@@ -354,27 +405,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Document
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -466,7 +496,7 @@
           <li class="md-nav__item">
   <a href="#dataset" class="md-nav__link">
     <span class="md-ellipsis">
-      📂 Dataset
+      Dataset
     </span>
   </a>
   
@@ -495,6 +525,15 @@
   
     <nav class="md-nav" aria-label="💻 Deployment">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#execution-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution Overview 🎬
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#postgres-setup" class="md-nav__link">
@@ -581,7 +620,7 @@
 </ul>
 <p>The sequence to run the script is: <code>create_table.py</code> -&gt; <code>spark_streaming.py</code> -&gt; <code>kafka_stream.py</code></p>
 <h2 id="local-setup"><strong>⚙️ Local Setup</strong></h2>
-<h3 id="dataset"><strong>📂 Dataset</strong></h3>
+<h3 id="dataset"><strong>Dataset</strong></h3>
 <p>The company has shared with you 3 key datasets for this data.</p>
 <details>
 <summary>🚕 New York Yellow Taxi Dataset</summary>
@@ -696,57 +735,58 @@
 <blockquote>
 <p><strong>Apache Spark is only compatible with Java 8, Java 11, or Java 17.</strong></p>
 </blockquote>
-<pre><code class="language-bash"># Clone the repository
- git clone https://github.com/lnynhi02/Data-Pipeline-Project.git
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># Clone the repository</span>
+<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/lnynhi02/Data-Pipeline-Project.git
+</code></pre></div>
 <p><strong>Here is the overall structure of the project:</strong></p>
-<pre><code>Root Directory
+<div class="highlight"><pre><span></span><code>Project Directory
 |
 ├── data
 │   ├── yellow_tripdata_2024.csv
 │   ├── taxi_zone_lookup.csv
-│   ├── taxi_zone_shapefile
-│   └── index.txt
-│
+│   └── taxi_zone_shapefile
+|
 ├── config
-│   └── config.ini
-│
+│   ├── config.ini          # includes the configuration of PostgreSQL, Kafka, and email alerts
+│   ├── index.txt           # the number of messages sent
+│   └── requirements.txt
+|
 ├── src
-│   ├── create_table.py
-│   ├── kafka_stream.py
-│   └── spark_streaming.py
-│
+│   ├── utils.py            # contains helper functions, such as sending email alerts
+│   ├── kafka_stream.py     # streams data from Kafka topic
+│   └── spark_streaming.py  # processes streamed data using Spark Streaming
+|
 ├── tmp
 │   ├── sql_warehouse
 │   ├── local_dir
-│   └── checkpoint
-│       ├── abnormal_duration
+│   └── checkpoint          # Spark Streaming checkpoints
+│       ├── full_table_data
 │       ├── abnormal_fee
-│       ├── avg_duration
-│       ├── avg_revenue
-│       ├── raw_data
-│       └── trip_count
-│
-└── docker-compose.yaml
-</code></pre>
-<ul>
-<li>The <code>config</code> directory contains a <code>config.ini</code> file that includes the configuration of your PostgreSQL database and <code>requirements.txt</code> includes all the essential packages.</li>
-</ul>
+│       ├── abnormal_duration
+│       ├── avg_revenue_per_hour
+│       ├── trip_count_per_hour
+│       └── trip_count_by_borough
+|
+└── docker-compose.yaml     # used to run Kafka and Kafka UI services
+</code></pre></div>
 <h2 id="deployment"><strong>💻 Deployment</strong></h2>
+<h3 id="execution-overview">Execution Overview 🎬</h3>
+<p>Before setting up the environment, here’s a quick demo of the pipeline in action:
+📽️</p>
+<p><div class="video-container"><video style="position:relative;width:100%;height:22.172vw" muted controls alt="type:video"><source src="./img/full-deploy.mp4" type="video/mp4"></source></video></div></p>
 <h3 id="postgres-setup">Postgres Setup</h3>
 <p>Before setting up our Spark and Airflow configurations, let’s create the Postgres database that will persist our data. I prefer using the <strong>pgAdmin 4</strong> tool for this; however, any other Postgres development platform can do the job.</p>
 <p>When installing Postgres, you need to set up a password that we will need later to connect to the database from the Spark environment. <strong>You must remember the password to reconnect to the database servers.</strong> You can also leave the port at 5432.</p>
-<p>To create the table and add its columns, we use a script with <strong>psycopg2</strong>, a PostgreSQL database adapter for Python. We have installed the <strong>psycopg2-binary</strong> package in the <code>requirements.txt</code> file.</p>
-<p>Run the Python script with the following command:</p>
-<pre><code>python src/create_table.py
-</code></pre>
+<p>You can create your database for the project in the pgAdmin4 or run the PostgreSQL script to create the database:</p>
+<p><img alt="Image" src="../img/postgres.png"></p>
 <h3 id="kafka-setup">Kafka Setup</h3>
 <p>To avoid resending messages that have already been processed each time we run the streaming task, we define an <code>index.txt</code> file that records the number of messages sent in the latest streaming session.</p>
 <p>The code for the Kafka streaming task can be found in <code>src/kafka_stream.py</code>, which involves extracting data from a CSV file, serving the data to a Kafka topic using a Kafka producer, and updating the numbers in <code>index.txt</code>.</p>
 <p>Run the Kafka service defined in the <code>docker-compose.yaml</code> file:</p>
-<pre><code>docker-compose up -d
-</code></pre>
-<p>After the services start, visit the Kafka UI at http://localhost:8800/.</p>
+<div class="highlight"><pre><span></span><code>docker-compose up -d
+</code></pre></div>
+<p>After the services start, visit the Kafka UI at http://localhost:8800/:
+<img alt="Image" src="../img/kafka-ui.png"></p>
 <p>Create a topic named <em>yellow_tripdata</em> with:</p>
 <ul>
 <li><em>Replication factor</em> set to 1</li>
@@ -757,72 +797,298 @@
 <p>The goal of the Spark jobs is to consume the streaming data from the Kafka topic <strong>yellow_tripdata</strong> and then transfer it to the Postgres tables.</p>
 <p>The complete code for the Spark jobs is in the <code>src/spark_streaming.py</code> file.</p>
 <ul>
-<li>Create the Spark Session:</li>
+<li>
+<p>Create the Spark Session:
+</p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_sparksession</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SparkSession</span><span class="p">:</span>
+    <span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span> \
+            <span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">"KafkaToPostgres"</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">"spark.sql.shuffle.partitions"</span><span class="p">,</span> <span class="s2">"9"</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">"spark.sql.warehouse.dir"</span><span class="p">,</span> <span class="s2">"tmp/sql_warehouse"</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">"spark.local.dir"</span><span class="p">,</span> <span class="s2">"tmp/local_dir"</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">spark</span>
+</code></pre></div>
+</li>
+<li>
+<p>Read Kafka stream and apply schema:
+</p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_schema</span><span class="p">(</span><span class="n">streaming_df</span><span class="p">):</span>
+    <span class="n">schema</span> <span class="o">=</span> <span class="n">StructType</span><span class="p">([</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'VendorID'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'tpep_pickup_datetime'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'tpep_dropoff_datetime'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'passenger_count'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'trip_distance'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'RatecodeID'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'store_and_fwd_flag'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'PULocationID'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'DOLocationID'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'payment_type'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'fare_amount'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'extra'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'mta_tax'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'tip_amount'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'tolls_amount'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'improvement_surcharge'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'total_amount'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'congestion_surcharge'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="n">StructField</span><span class="p">(</span><span class="s1">'Airport_fee'</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">)</span>
+    <span class="p">])</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">streaming_df</span><span class="o">.</span><span class="n">selectExpr</span><span class="p">(</span><span class="s2">"CAST(value AS String)"</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">from_json</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">'value'</span><span class="p">),</span> <span class="n">schema</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">'data'</span><span class="p">))</span>\
+        <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">'data.*'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+</li>
+<li>
+<p>In the previous version of the pipeline, I didn't change the column types at the beginning. However, for this version, I've changed the data types upfront, so we no longer need to cast the data types during real-time analysis.
+</p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">column_types</span><span class="p">(</span><span class="n">df_stream</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df_stream</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"VendorID"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"VendorID"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"int"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"vendor_id"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"tpep_pickup_datetime"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">to_timestamp</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"tpep_pickup_datetime"</span><span class="p">)))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"pickup_datetime"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"tpep_dropoff_datetime"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">to_timestamp</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"tpep_dropoff_datetime"</span><span class="p">)))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"dropoff_datetime"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"passenger_count"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"passenger_count"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"int"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"passenger_count"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"trip_distance"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"trip_distance"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"trip_distance"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"RatecodeID"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"RatecodeID"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"int"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"ratecode_id"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"PULocationID"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"PULocationID"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"int"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"pu_location_id"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"DOLocationID"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"DOLocationID"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"int"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"do_location_id"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"payment_type"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"payment_type"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"int"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"payment_type"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"fare_amount"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"fare_amount"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"fare_amount"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"extra"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"extra"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"extra"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"mta_tax"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"mta_tax"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"mta_tax"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"tip_amount"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"tip_amount"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"tip_amount"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"tolls_amount"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"tolls_amount"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"tolls_amount"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"improvement_surcharge"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"improvement_surcharge"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"improvement_surcharge"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"congestion_surcharge"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"congestion_surcharge"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"congestion_surcharge"</span><span class="p">),</span>
+        <span class="n">when</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"Airport_fee"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">""</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"Airport_fee"</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="s2">"double"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"airport_fee"</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+</li>
+<li>And by selecting only the columns needed for the analysis, we can improve performance and avoid scanning unnecessary columns, which helps reduce the read and write data volume.
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">select_column</span><span class="p">(</span><span class="n">df_parsed</span><span class="p">):</span>
+    <span class="n">df_main</span> <span class="o">=</span> <span class="n">df_parsed</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+        <span class="s2">"pickup_datetime"</span><span class="p">,</span> <span class="s2">"dropoff_datetime"</span><span class="p">,</span> <span class="s2">"total_amount"</span><span class="p">,</span> <span class="s2">"payment_type"</span>
+    <span class="p">)</span>
+
+    <span class="n">df_extra</span> <span class="o">=</span> <span class="n">df_parsed</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+        <span class="s2">"pickup_datetime"</span><span class="p">,</span> <span class="s2">"dropoff_datetime"</span><span class="p">,</span> <span class="s2">"total_amount"</span><span class="p">,</span> <span class="s2">"payment_type"</span><span class="p">,</span>
+        <span class="s2">"pu_location_id"</span><span class="p">,</span> <span class="s2">"do_location_id"</span><span class="p">,</span> <span class="s2">"fare_amount"</span><span class="p">,</span> <span class="s2">"extra"</span><span class="p">,</span> <span class="s2">"mta_tax"</span><span class="p">,</span> 
+        <span class="s2">"tip_amount"</span><span class="p">,</span> <span class="s2">"tolls_amount"</span><span class="p">,</span> <span class="s2">"improvement_surcharge"</span><span class="p">,</span> <span class="s2">"airport_fee"</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">df_main</span><span class="p">,</span> <span class="n">df_extra</span>
+</code></pre></div></li>
 </ul>
-<pre><code class="language-python">def create_sparksession() -&gt; SparkSession:
-    spark = SparkSession.builder \
-            .appName("KafkaToPostgres") \
-            .config("spark.sql.shuffle.partitions", "9") \
-            .config("spark.sql.warehouse.dir", "tmp/sql_warehouse") \
-            .config("spark.local.dir", "tmp/local_dir") \
-            .getOrCreate()
-    return spark
-</code></pre>
+<hr>
+<p>The following are some functions I use to analyze real-time data trends using <strong>Spark Structured Streaming</strong> and <strong>Window functions</strong>.</p>
+<ol>
+<li>
+<p>One of the functions is <code>detect_abnormal_fee</code> used to detect trips with abnormal fees, such as discrepancies between the total_amount and the calculated amount from summing individual fee components. Moreover, in this version, I’ve added an alert system that can immediately notify whenever an abnormal trip is detected.</p>
 <ul>
-<li>Read Kafka stream and apply schema:</li>
+<li>At first, I attempted to detect abnormal trip durations and add alert using the following code:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">detect_abnormal_fee</span><span class="p">(</span><span class="n">df_extra</span><span class="p">):</span>
+    <span class="n">abnormal_fee</span> <span class="o">=</span> <span class="n">df_extra</span> \
+        <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">"caculated_total_amount"</span><span class="p">,</span> 
+                    <span class="n">col</span><span class="p">(</span><span class="s2">"fare_amount"</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="n">col</span><span class="p">(</span><span class="s2">"extra"</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="n">col</span><span class="p">(</span><span class="s2">"mta_tax"</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="n">col</span><span class="p">(</span><span class="s2">"tip_amount"</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="n">col</span><span class="p">(</span><span class="s2">"tolls_amount"</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="n">col</span><span class="p">(</span><span class="s2">"improvement_surcharge"</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="n">col</span><span class="p">(</span><span class="s2">"airport_fee"</span><span class="p">))</span> \
+        <span class="o">.</span><span class="n">filter</span><span class="p">((</span><span class="nb">abs</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">)</span> <span class="o">-</span> <span class="n">col</span><span class="p">(</span><span class="s2">"caculated_total_amount"</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">)</span><span class="o">.</span><span class="n">isNull</span><span class="p">()))</span> \
+        <span class="o">.</span><span class="n">selectExpr</span><span class="p">(</span>
+            <span class="s2">"pickup_datetime"</span><span class="p">,</span> 
+            <span class="s2">"dropoff_datetime"</span><span class="p">,</span> 
+            <span class="s2">"pu_location_id"</span><span class="p">,</span> 
+            <span class="s2">"do_location_id"</span><span class="p">,</span> 
+            <span class="s2">"round(abs(total_amount - caculated_total_amount), 2) AS amount_discrepancy"</span>
+        <span class="p">)</span>
+
+    <span class="c1"># === Adding alert ===</span>
+    <span class="n">abnormal_fee_count</span> <span class="o">=</span> <span class="n">abnormal_fee</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">abnormal_fee_count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">alert_message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"⚠️ </span><span class="si">{</span><span class="n">abnormal_fee_count</span><span class="si">}</span><span class="s2"> trips with abnormal fee detected."</span>
+
+        <span class="n">send_email</span><span class="p">(</span>
+            <span class="n">subject</span><span class="o">=</span><span class="s2">"Alert: Abnormal Trip Fee Detected"</span><span class="p">,</span>
+            <span class="n">body</span><span class="o">=</span><span class="n">alert_message</span><span class="p">,</span>
+            <span class="n">to_email</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">"email"</span><span class="p">][</span><span class="s2">"to_email"</span><span class="p">]</span>
+        <span class="p">)</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">alert_message</span><span class="p">)</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="n">abnormal_duration</span> \
+        <span class="o">.</span><span class="n">writeStream</span> \
+        <span class="o">.</span><span class="n">foreachBatch</span><span class="p">(</span><span class="n">process_abnormal_fee</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">outputMode</span><span class="p">(</span><span class="s2">"append"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">"checkpointLocation"</span><span class="p">,</span> <span class="s2">"tmp/checkpoint/abnormal_fee"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">query</span>
+</code></pre></div></li>
+<li>
+<p>However, this approach caused a runtime error:
+<img alt="Image" src="../img/error.png">
+--&gt; This is because in Spark Structured Streaming, actions like <code>.count()</code> <strong>cannot be directly applied on streaming DataFrames</strong>, as the data flows continuously—unlike in batch processing where you can simply use <code>df.count()</code>. Instead, we need to process the data within a <code>foreachBatch</code> function, where each micro-batch is treated as a regular batch DataFrame. This enables us to safely use actions like .<code>count()</code> and apply custom logic.</p>
+</li>
+<li>
+<p>The corrected implementation is as follows:
+</p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">detect_abnormal_fee</span><span class="p">(</span><span class="n">df_extra</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">process_abnormal_fee</span><span class="p">(</span><span class="n">batch_df</span><span class="p">,</span> <span class="n">epoch_id</span><span class="p">):</span>
+        <span class="n">abnormal_fee</span> <span class="o">=</span> <span class="n">batch_df</span> \
+            <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">"caculated_total_amount"</span><span class="p">,</span> 
+                        <span class="n">col</span><span class="p">(</span><span class="s2">"fare_amount"</span><span class="p">)</span> <span class="o">+</span>
+                        <span class="n">col</span><span class="p">(</span><span class="s2">"extra"</span><span class="p">)</span> <span class="o">+</span>
+                        <span class="n">col</span><span class="p">(</span><span class="s2">"mta_tax"</span><span class="p">)</span> <span class="o">+</span>
+                        <span class="n">col</span><span class="p">(</span><span class="s2">"tip_amount"</span><span class="p">)</span> <span class="o">+</span>
+                        <span class="n">col</span><span class="p">(</span><span class="s2">"tolls_amount"</span><span class="p">)</span> <span class="o">+</span>
+                        <span class="n">col</span><span class="p">(</span><span class="s2">"improvement_surcharge"</span><span class="p">)</span> <span class="o">+</span>
+                        <span class="n">col</span><span class="p">(</span><span class="s2">"airport_fee"</span><span class="p">))</span> \
+            <span class="o">.</span><span class="n">filter</span><span class="p">((</span><span class="nb">abs</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">)</span> <span class="o">-</span> <span class="n">col</span><span class="p">(</span><span class="s2">"caculated_total_amount"</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">)</span><span class="o">.</span><span class="n">isNull</span><span class="p">()))</span> \
+            <span class="o">.</span><span class="n">selectExpr</span><span class="p">(</span>
+                <span class="s2">"pickup_datetime"</span><span class="p">,</span> 
+                <span class="s2">"dropoff_datetime"</span><span class="p">,</span> 
+                <span class="s2">"pu_location_id"</span><span class="p">,</span> 
+                <span class="s2">"do_location_id"</span><span class="p">,</span> 
+                <span class="s2">"round(abs(total_amount - caculated_total_amount), 2) AS amount_discrepancy"</span>
+            <span class="p">)</span>
+
+        <span class="c1"># === Adding alert ===</span>
+        <span class="n">abnormal_fee_count</span> <span class="o">=</span> <span class="n">abnormal_fee</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">abnormal_fee_count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">alert_message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"⚠️ </span><span class="si">{</span><span class="n">abnormal_fee_count</span><span class="si">}</span><span class="s2"> trips with abnormal fee detected."</span>
+
+            <span class="n">send_email</span><span class="p">(</span>
+                <span class="n">subject</span><span class="o">=</span><span class="s2">"Alert: Abnormal Trip Fee Detected"</span><span class="p">,</span>
+                <span class="n">body</span><span class="o">=</span><span class="n">alert_message</span><span class="p">,</span>
+                <span class="n">to_email</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">"email"</span><span class="p">][</span><span class="s2">"to_email"</span><span class="p">]</span>
+            <span class="p">)</span>
+
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">alert_message</span><span class="p">)</span>
+
+        <span class="n">foreach_batch_jdbc_writer</span><span class="p">(</span><span class="n">abnormal_fee</span><span class="p">,</span> <span class="n">epoch_id</span><span class="p">,</span> <span class="s2">"abnormal_fee"</span><span class="p">)</span>
+
+
+    <span class="n">query</span> <span class="o">=</span> <span class="n">df_extra</span> \
+        <span class="o">.</span><span class="n">writeStream</span> \
+        <span class="o">.</span><span class="n">foreachBatch</span><span class="p">(</span><span class="n">process_abnormal_fee</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">outputMode</span><span class="p">(</span><span class="s2">"append"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">"checkpointLocation"</span><span class="p">,</span> <span class="s2">"tmp/checkpoint/abnormal_fee"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">query</span>
+</code></pre></div>
+</li>
 </ul>
-<pre><code class="language-python">def create_schema(streaming_df):
-    schema = StructType([
-        StructField('VendorID', StringType(), True),
-        StructField('tpep_pickup_datetime', StringType(), True),
-        StructField('tpep_dropoff_datetime', StringType(), True),
-        StructField('passenger_count', StringType(), True),
-        StructField('trip_distance', StringType(), True),
-        StructField('RatecodeID', StringType(), True),
-        StructField('store_and_fwd_flag', StringType(), True),
-        StructField('PULocationID', StringType(), True),
-        StructField('DOLocationID', StringType(), True),
-        StructField('payment_type', StringType(), True),
-        StructField('fare_amount', StringType(), True),
-        StructField('extra', StringType(), True),
-        StructField('mta_tax', StringType(), True),
-        StructField('tip_amount', StringType(), True),
-        StructField('tolls_amount', StringType(), True),
-        StructField('improvement_surcharge', StringType(), True),
-        StructField('total_amount', StringType(), True),
-        StructField('congestion_surcharge', StringType(), True),
-        StructField('Airport_fee', StringType(), True)
-    ])
-    df = streaming_df.selectExpr("CAST(value AS String)")\
-        .select(from_json(col('value'), schema).alias('data'))\
-        .select('data.*')
-    return df
-</code></pre>
+<hr>
+</li>
+<li>
+<p>The function <code>avg_revenue_per_hour</code> is used to calculate the average revenue per hour, grouped by <em>payment type</em>.
+</p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">avg_revenue_per_hour</span><span class="p">(</span><span class="n">df_main</span><span class="p">):</span>    
+    <span class="n">avg_revenue_per_hour</span> <span class="o">=</span> <span class="n">df_main</span> \
+        <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">)</span><span class="o">.</span><span class="n">isNotNull</span><span class="p">())</span> \
+        <span class="o">.</span><span class="n">withWatermark</span><span class="p">(</span><span class="s2">"pickup_datetime"</span><span class="p">,</span> <span class="s2">"60 minutes"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="n">window</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"pickup_datetime"</span><span class="p">),</span> <span class="s2">"60 minutes"</span><span class="p">))</span> \
+        <span class="o">.</span><span class="n">agg</span><span class="p">(</span>
+            <span class="n">avg</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">),</span>
+            <span class="n">avg</span><span class="p">(</span><span class="n">expr</span><span class="p">(</span><span class="s2">"CASE WHEN payment_type = 1 THEN total_amount END"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"credit_card"</span><span class="p">),</span>
+            <span class="n">avg</span><span class="p">(</span><span class="n">expr</span><span class="p">(</span><span class="s2">"CASE WHEN payment_type = 2 THEN total_amount END"</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"cash"</span><span class="p">)</span>
+        <span class="p">)</span> \
+        <span class="o">.</span><span class="n">selectExpr</span><span class="p">(</span>
+            <span class="s2">"cast(date_format(window.start, 'yyyy-MM-dd') as date) AS date"</span><span class="p">,</span>
+            <span class="s2">"date_format(window.start, 'HH:mm:ss') AS start_time"</span><span class="p">,</span>
+            <span class="s2">"date_format(window.end, 'HH:mm:ss') AS end_time"</span><span class="p">,</span>
+            <span class="s2">"round(total_amount, 2) AS total_amount"</span><span class="p">,</span>
+            <span class="s2">"round(credit_card, 2) AS credit_card"</span><span class="p">,</span>
+            <span class="s2">"round(cash, 2) AS cash"</span>
+        <span class="p">)</span> \
+        <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">"window"</span><span class="p">)</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="n">avg_revenue_per_hour</span> \
+        <span class="o">.</span><span class="n">writeStream</span> \
+        <span class="o">.</span><span class="n">foreachBatch</span><span class="p">(</span><span class="k">lambda</span> <span class="n">df</span><span class="p">,</span> <span class="n">epoch_id</span><span class="p">:</span> <span class="n">foreach_batch_jdbc_writer</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">epoch_id</span><span class="p">,</span> <span class="s2">"avg_revenue_per_hour"</span><span class="p">))</span> \
+        <span class="o">.</span><span class="n">outputMode</span><span class="p">(</span><span class="s2">"append"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">"checkpointLocation"</span><span class="p">,</span> <span class="s2">"tmp/checkpoint/avg_revenue"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">query</span>
+</code></pre></div>
+</li>
+</ol>
+<hr>
+<ol>
+<li>The function <code>calculate_trip_count_per_zone</code> is used to count the number of trips per borough. We use the <code>ttaxi_zone_lookup.csv</code> file located in the <code>data/</code> folder as a reference for zone and borough mapping. To improve performance and avoid shuffling, a <code>broadcast join</code> is used—this is especially effective when joining a large dataset with a smaller one.
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">caculate_trip_count_per_zone</span><span class="p">(</span><span class="n">spark</span><span class="p">,</span> <span class="n">df_extra</span><span class="p">):</span>
+    <span class="n">taxi_zone_lookup_path</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"data/taxi_zone_lookup.csv"</span><span class="p">)</span>
+
+    <span class="n">lookup_df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="n">taxi_zone_lookup_path</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inferSchema</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">df_extra</span> <span class="o">=</span> <span class="n">df_extra</span> \
+    <span class="o">.</span><span class="n">select</span><span class="p">(</span>
+        <span class="s2">"pickup_datetime"</span><span class="p">,</span> <span class="s2">"dropoff_datetime"</span><span class="p">,</span> <span class="s2">"pu_location_id"</span>
+    <span class="p">)</span>
+
+    <span class="n">df_extra_with_location</span> <span class="o">=</span> <span class="n">df_extra</span> \
+        <span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">broadcast</span><span class="p">(</span><span class="n">lookup_df</span><span class="p">),</span> <span class="n">df_extra</span><span class="o">.</span><span class="n">pu_location_id</span> <span class="o">==</span> <span class="n">lookup_df</span><span class="o">.</span><span class="n">LocationID</span><span class="p">,</span> <span class="s2">"left"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df_extra</span><span class="p">[</span><span class="s2">"*"</span><span class="p">],</span> <span class="n">lookup_df</span><span class="p">[</span><span class="s2">"LocationID"</span><span class="p">],</span> <span class="n">lookup_df</span><span class="p">[</span><span class="s2">"Borough"</span><span class="p">])</span>
+
+    <span class="n">trip_count_per_borough</span> <span class="o">=</span> <span class="n">df_extra_with_location</span> \
+        <span class="o">.</span><span class="n">withWatermark</span><span class="p">(</span><span class="s2">"pickup_datetime"</span><span class="p">,</span> <span class="s2">"60 minutes"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">groupBy</span><span class="p">(</span>
+            <span class="n">window</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"pickup_datetime"</span><span class="p">),</span> <span class="s2">"60 minutes"</span><span class="p">),</span>
+            <span class="s2">"Borough"</span>
+        <span class="p">)</span> \
+        <span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">count</span><span class="p">(</span><span class="s2">"pu_location_id"</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"total_trip"</span><span class="p">))</span> \
+        <span class="o">.</span><span class="n">selectExpr</span><span class="p">(</span>
+            <span class="s2">"cast(date_format(window.start, 'yyyy-MM-dd') as date) AS date"</span><span class="p">,</span>
+            <span class="s2">"date_format(window.start, 'HH:mm:ss') AS start_time"</span><span class="p">,</span>
+            <span class="s2">"date_format(window.end, 'HH:mm:ss') AS end_time"</span><span class="p">,</span>
+            <span class="s2">"Borough AS borough"</span><span class="p">,</span>
+            <span class="s2">"total_trip"</span>
+        <span class="p">)</span> \
+        <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">"window"</span><span class="p">)</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="n">trip_count_per_borough</span> \
+        <span class="o">.</span><span class="n">writeStream</span> \
+        <span class="o">.</span><span class="n">outputMode</span><span class="p">(</span><span class="s2">"append"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">foreachBatch</span><span class="p">(</span><span class="k">lambda</span> <span class="n">df</span><span class="p">,</span> <span class="n">epoch_id</span><span class="p">:</span> <span class="n">foreach_batch_jdbc_writer</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">epoch_id</span><span class="p">,</span> <span class="s2">"trip_count_by_borough"</span><span class="p">))</span> \
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">"checkpointLocation"</span><span class="p">,</span> <span class="s2">"tmp/checkpoint/trip_count_by_borough"</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">query</span>
+</code></pre></div></li>
+</ol>
+<hr>
 <ul>
-<li>Run Spark jobs:</li>
-</ul>
-<pre><code class="language-bash">$SPARK_HOME/bin/spark-class.cmd org.apache.spark.deploy.master.Master
-$SPARK_HOME/sbin/start-master.sh
-</code></pre>
-<ul>
-<li>Start a Spark worker:</li>
-</ul>
-<pre><code class="language-bash">$SPARK_HOME/bin/spark-class.cmd org.apache.spark.deploy.worker.Worker spark://HOST:PORT
-$SPARK_HOME/sbin/start-slave.sh spark://HOST:PORT
-</code></pre>
-<ul>
-<li>Submit Spark jobs:</li>
-</ul>
-<pre><code class="language-bash">$YOUR_PROJECT_DIRECTORY/spark-submit \
---master spark://HOST:PORT \
---num-executors 1 \
---executor-memory 5G \
---total-executor-cores 10 \
---packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,org.postgresql:postgresql:42.5.4,org.apache.kafka:kafka-clients:3.7.0 \
---driver-class-path /path-to-your-jar/postgresql-x.x.x.jar \
+<li>
+<p>Run Spark jobs:
+</p><div class="highlight"><pre><span></span><code><span class="nv">$SPARK_HOME</span>/bin/spark-class.cmd<span class="w"> </span>org.apache.spark.deploy.master.Master
+<span class="nv">$SPARK_HOME</span>/sbin/start-master.sh
+</code></pre></div>
+</li>
+<li>
+<p>Start a Spark worker:
+</p><div class="highlight"><pre><span></span><code><span class="nv">$SPARK_HOME</span>/bin/spark-class.cmd<span class="w"> </span>org.apache.spark.deploy.worker.Worker<span class="w"> </span>spark://HOST:PORT
+<span class="nv">$SPARK_HOME</span>/sbin/start-slave.sh<span class="w"> </span>spark://HOST:PORT
+</code></pre></div>
+</li>
+<li>
+<p>Submit Spark jobs:
+</p><div class="highlight"><pre><span></span><code><span class="nv">$YOUR_PROJECT_DIRECTORY</span>/spark-submit<span class="w"> </span><span class="se">\</span>
+--master<span class="w"> </span>spark://HOST:PORT<span class="w"> </span><span class="se">\</span>
+--num-executors<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+--executor-memory<span class="w"> </span>5G<span class="w"> </span><span class="se">\</span>
+--total-executor-cores<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="se">\</span>
+--packages<span class="w"> </span>org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,org.postgresql:postgresql:42.5.4,org.apache.kafka:kafka-clients:3.7.0<span class="w"> </span><span class="se">\</span>
+--driver-class-path<span class="w"> </span>/path-to-your-jar/postgresql-x.x.x.jar<span class="w"> </span><span class="se">\</span>
 src/spark_streaming.py
-</code></pre>
-<p>If there are no errors, you should see successful output in the shell.</p>
+</code></pre></div>
+</li>
+</ul>
+<p>If there are no errors, you can then query the data in pgAdmin4. For a step-by-step tutorial, refer to the <a href="#execution-overview">Execution Overview 🎬</a></p>
 <h2 id="summary"><strong>Summary</strong></h2>
 <p>Throughout this guide, we’ve thoroughly examined each component of the pipeline, setting up Kafka for data streaming, from processing data with Spark to storing it in PostgreSQL. The incorporation of Docker simplifies the Kafka setup.</p>
 <p>It's important to note that while this setup is ideal for learning and small-scale projects, scaling it for production use would require additional considerations, particularly regarding security and performance optimization. Future enhancements could include integrating advanced data processing techniques,expanding the pipeline to incorporate more complex data sources.</p>
