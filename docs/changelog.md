@@ -3,7 +3,7 @@
 | Date       | Version | Changes                                                                                                                                     | Notes                                                                                     |
 |------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | 2024-08    | v1.0    | | - This marks the first version of the pipeline, in which the core logic has been successfully implemented. <br>
-| 2025-04-04 | v1.1    | - Rewrote documentation. <br> - Implemented logging & alerting. |                                           |
+| 2025-04-19 | v1.1    | - Rewrote documentation. <br> - Implemented logging & alerting. |                                           |
 
 
 ##### Version 1.0
