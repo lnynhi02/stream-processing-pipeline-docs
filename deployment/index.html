@@ -14,6 +14,8 @@
         <link rel="prev" href="../changelog/">
       
       
+        <link rel="next" href="../references/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
@@ -421,6 +423,27 @@
   
   <span class="md-ellipsis">
     GitHub Repository
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
     
   </span>
   
@@ -987,7 +1010,7 @@
 <hr>
 </li>
 <li>
-<p>The function <code>avg_revenue_per_hour</code> is used to calculate the average revenue per hour, grouped by <em>payment type</em>.
+<p>The function <code>avg_revenue_per_hour</code> is used to calculate the average revenue per hour, grouped by <em>payment type</em>. By applying filters before performing aggregations, it reduces the amount of data shuffled across the cluster, resulting in lower computation time and improved efficiency.
 </p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">avg_revenue_per_hour</span><span class="p">(</span><span class="n">df_main</span><span class="p">):</span>    
     <span class="n">avg_revenue_per_hour</span> <span class="o">=</span> <span class="n">df_main</span> \
         <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">"total_amount"</span><span class="p">)</span><span class="o">.</span><span class="n">isNotNull</span><span class="p">())</span> \
@@ -1089,6 +1112,13 @@ src/spark_streaming.py
 </li>
 </ul>
 <p>If there are no errors, you can then query the data in pgAdmin4. For a step-by-step tutorial, refer to the <a href="#execution-overview">Execution Overview 🎬</a></p>
+<div class="admonition note">
+<p class="admonition-title">Technical Notes</p>
+<ul>
+<li><strong>Using a Single Executor:</strong> Due to limited CPU and memory resources, a <strong>fat executor</strong> approach is used—allocating all available resources to a <strong>single executor</strong>. With 10 cores, each core receives 500MB of memory, optimizing data processing efficiency.  Since each partition ideally handles around 250MB of data, this configuration ensures that each core can comfortably process a partition without running into memory constraints, maintaining optimal parallelism and performance.</li>
+<li><strong>Kafka Partitioning Strategy:</strong> Kafka topics are configured with <em>10 partitions</em> to align with Spark's 10 available cores, ensuring parallel processing and maximizing throughput.</li>
+</ul>
+</div>
 <h2 id="summary"><strong>Summary</strong></h2>
 <p>Throughout this guide, we’ve thoroughly examined each component of the pipeline, setting up Kafka for data streaming, from processing data with Spark to storing it in PostgreSQL. The incorporation of Docker simplifies the Kafka setup.</p>
 <p>It's important to note that while this setup is ideal for learning and small-scale projects, scaling it for production use would require additional considerations, particularly regarding security and performance optimization. Future enhancements could include integrating advanced data processing techniques,expanding the pipeline to incorporate more complex data sources.</p>
